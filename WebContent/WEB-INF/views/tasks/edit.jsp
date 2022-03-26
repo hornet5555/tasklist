@@ -3,12 +3,12 @@
 <c:import url="../layout/app.jsp">
     <c:param name="content">
         <c:choose>
-            <c:when test="${message != null}">
-                <h2>id : ${message.id} のメッセージ編集ページ</h2>
+            <c:when test="${task != null}">
+                <h2>id : ${task.id} のメッセージ編集ページ</h2>
 
                 <form method="POST" action="${pageContext.request.contextPath}/update">
                     <label for="content">メッセージ</label><br />
-                    <input type="text" name="content" value="${message.content}" />
+                    <input type="text" name="content" value="${task.content}" />
                     <br /><br />
 
                     <input type="hidden" name="_token" value="${_token}" />

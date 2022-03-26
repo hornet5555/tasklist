@@ -4,11 +4,10 @@
     <c:param name="content">
         <h2>メッセージ新規作成ページ</h2>
 
-
         <form method="POST" action="${pageContext.request.contextPath}/create">
 
             <label for="content">メッセージ</label><br />
-            <input type="text" name="content" value="${message.content}" />
+            <input type="text" name="content" value="${task.content}" />
             <br /><br />
 
             <input type="hidden" name="_token" value="${_token}" />
