@@ -12,7 +12,7 @@
                         <br /><br />
 
                         <input type="hidden" name="_token" value="${_token}" />
-                        <button type="submit">投稿</button
+                        <button type="submit">投稿</button>
                 </form>
 
                 <p><a href="${pageContext.request.contextPath}/index">一覧に戻る</a></p>
